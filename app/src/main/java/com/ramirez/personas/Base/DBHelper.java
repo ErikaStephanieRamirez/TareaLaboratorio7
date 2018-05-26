@@ -1,4 +1,4 @@
-package com.ramirez.personas.Entidades;
+package com.ramirez.personas.Base;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -26,12 +26,10 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public static final String DB_NAME="bd_usuarios";
-    public static final String TABLA_USUARIO="Persona";
-    public static final String CAMPO_ID="dui";
+    public static final String TABLA_USUARIO="Alumno";
+    public static final String CAMPO_ID="carnet";
     public static final String CAMPO_NOMBRE="nombre";
-    public static final String CAMPO_NOTA = "Nota";
-    public static final String SACAR_PROMEDIO = "SELECT AVG("+CAMPO_NOTA +") FROM "+TABLA_USUARIO;
-
+    public static final String CAMPO_NOTA = "nota";
     public static final String CREAR_TABLA_USUARIO = "CREATE TABLE " + TABLA_USUARIO
                                                     + "(" + CAMPO_ID + " TEXT," + CAMPO_NOMBRE + " TEXT, " + CAMPO_NOTA + " TEXT)";
 

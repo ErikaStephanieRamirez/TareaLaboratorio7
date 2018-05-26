@@ -1,4 +1,4 @@
-package com.ramirez.personas;
+package com.ramirez.personas.Activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.ramirez.personas.Datos.Persona;
-import com.ramirez.personas.Entidades.DBHelper;
+import com.ramirez.personas.Base.DBHelper;
+import com.ramirez.personas.R;
 
 public class Registar extends AppCompatActivity {
 

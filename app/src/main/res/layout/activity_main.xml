@@ -6,26 +6,41 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Activitys.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de notas."
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/notas"
+        android:layout_marginBottom="25dp"/>
 
     <Button
         android:id="@+id/mostrarRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar usuario"
-        android:layout_marginBottom="10dp" />
+        android:text="Registrar Alumno"
+        android:layout_marginBottom="20dp" />
 
     <Button
         android:id="@+id/consultar_usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="modificar usuario"
-        android:layout_marginBottom="10dp" />
+        android:text="modificar notas"
+        android:layout_marginBottom="20dp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="consultar lista de usuario"
-        android:layout_marginBottom="10dp" />
+        android:text="consultar notas" />
 
 </LinearLayout>

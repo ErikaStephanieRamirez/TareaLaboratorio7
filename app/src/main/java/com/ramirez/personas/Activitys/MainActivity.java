@@ -1,4 +1,4 @@
-package com.ramirez.personas;
+package com.ramirez.personas.Activitys;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.ramirez.personas.Entidades.DBHelper;
+import com.ramirez.personas.Base.DBHelper;
+import com.ramirez.personas.R;
 
 public class MainActivity extends AppCompatActivity {
 

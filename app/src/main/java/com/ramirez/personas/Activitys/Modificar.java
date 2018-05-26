@@ -1,4 +1,4 @@
-package com.ramirez.personas;
+package com.ramirez.personas.Activitys;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +8,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.ramirez.personas.Datos.Persona;
-import com.ramirez.personas.Entidades.DBHelper;
+import com.ramirez.personas.Base.DBHelper;
+import com.ramirez.personas.R;
 
 public class Modificar extends AppCompatActivity {
 
@@ -40,14 +41,14 @@ public class Modificar extends AppCompatActivity {
         btnActualizar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                DBHelper.myDB.editUser(new Persona(id.getText().toString(),
-                                        nota.getText().toString()));
+                DBHelper.myDB.editUser(new Persona(id.getText().toString(), nombre.getText().toString(), nota.getText().toString()));
             }
         });
-        btnLimpiar.setOnClickListener(new View.OnClickListener(){
+        btnEliminar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 DBHelper.myDB.deleteUser(id.getText().toString());
+                Toast.makeText(getApplicationContext(),"Usuario eliminado", Toast.LENGTH_SHORT).show();
                 limpiar();
             }
         });
@@ -72,5 +73,6 @@ public class Modificar extends AppCompatActivity {
     public void limpiar(){
         nombre.setText("");
         id.setText("");
+        nota.setText("");
     }
 }

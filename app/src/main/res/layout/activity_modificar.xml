@@ -5,20 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ramirez.personas.Modificar">
+    android:layout_margin="8dp"
+    tools:context="com.ramirez.personas.Activitys.Modificar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notas."
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:src="@drawable/notes"
+        android:layout_marginBottom="15dp"/>
 
     <LinearLayout
-        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Carnet: "/>
         <EditText
             android:id="@+id/txtIdM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Dui"/>
+            android:textSize="15dp"
+            android:hint="Carnet"/>
 
         <Button
             android:id="@+id/btnBuscarM"
@@ -29,23 +52,45 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nombre: "/>
 
         <EditText
             android:id="@+id/txtNombreN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:hint="Nombre"/>
+            android:hint="Nombre"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nota: "/>
 
         <EditText
             android:id="@+id/txtNotaN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:textSize="15dp"
             android:hint="Nota"/>
 
     </LinearLayout>
@@ -61,17 +106,20 @@
             android:id="@+id/btnActualizarM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Actualizar"/>
 
         <Button
             android:id="@+id/btnEliminarM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Eliminar"/>
 
         <Button
             android:id="@+id/btnLimpiarM"
             android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Limpiar"/>
 
