@@ -11,7 +11,7 @@ import com.ramirez.personas.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_registrar, btn_consultar, btn_consultarS, getbtn_consultarLv;
+    private Button btn_registrar, btn_consultar, btn_consultarS, ver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +35,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ConsultarActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void inicializarControles(){
         btn_registrar = findViewById(R.id.mostrarRegistro);
         btn_consultar = findViewById(R.id.consultar_usuario);
+        ver = findViewById(R.id.verlista);
     }
 }

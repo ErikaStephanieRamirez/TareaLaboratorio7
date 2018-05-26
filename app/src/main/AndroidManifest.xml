@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activitys.Registar" />
-        <activity android:name=".Activitys.Modificar"></activity>
+        <activity android:name=".Activitys.Modificar" />
+        <activity android:name=".CardView.CardViewActivity" />
+        <activity android:name=".Activitys.ConsultarActivity"></activity>
     </application>
 
 </manifest>
